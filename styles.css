@@ -32,33 +32,6 @@ nav {
 
 }
 
-.dropDown {
-    background-color: transparent;
-    color: white;
-    padding-top: 28px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    font-size: 20px;
-    font-family: Roboto, sans-serif;
-    border: none;
-    cursor: pointer;
-    float: right;
-    position: relative;
-    text-decoration: none;
-    z-index: 10;
-}
-
-.arrowDown {
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-bottom: 3px;
-    margin-left: 10px;
-    transform: rotate(45deg);
-}
-
 #helpBtn {
     font-family: Roboto, sans-serif;
     padding-bottom: 10px;
@@ -98,12 +71,41 @@ nav {
     color: white;
     border: none;
     font-size: 16px;
+    cursor: pointer;
+}
+
+
+.dropDown {
+    background-color: transparent;
+    color: white;
+    padding-top: 28px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+    display: inline-block;
+}
+
+.arrowDown {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
 }
 
 .dropDownContent {
-    display: ;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: none;
+    position: absolute;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.15);
@@ -116,6 +118,22 @@ nav {
     padding-left: 20px;
   }
 
+#communityDrop {
+        display: none;
+        position: absolute;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        background-color: #fff;
+        line-height: 2;
+        padding-top: 3px;
+        padding-right: 20px;
+        padding-bottom: 3px;
+        padding-left: 20px;
+      
+}
+
 .dropDownContent a {
     color: darkgrey;
     text-decoration: none;
@@ -123,7 +141,7 @@ nav {
     font-size: 16px;
 }
 
-.show {display: block;}
+.show {display: inline-block;}
 
 .sectionOne {
     background-image: url(./assets/gradient-violet-bg.jpg);

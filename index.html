@@ -33,14 +33,14 @@ The student does not have to recreate more than 2 times the view-height of the s
                 <a href="" target="blank" id="premium">Premium</a>
             </div>
             <div class="dropDown">
-                <button class="dropBtn" id="communityBtn">Community<i class="arrowDown"></i></button>
+                <button onclick="myFunction()" class="dropBtn" id="communityBtn">Community<i class="arrowDown"></i></button>
                 <div id="communityDrop" class="dropDownContent">
                     <a href="">Community Guidelines</a>
                     <a href="">Founders Hall of Fame</a>
                 </div>
             </div>
             <div class="dropDown">
-                <button class="dropBtn" id="helpBtn">Help<i class="arrowDown"></i></button>
+                <button  onclick="myFunctionTwo()" class="dropBtn" id="helpBtn">Help<i class="arrowDown"></i></button>
                 <div id="helpDrop" class="dropDownContent">
                     <a href="">Contact Support</a>
                     <a href="">FAQ's</a>
@@ -48,7 +48,7 @@ The student does not have to recreate more than 2 times the view-height of the s
                 </div>
             </div>
             <div class="dropDown">
-                <button class="dropBtn" id="aboutBtn">About<i class="arrowDown"></i></button>
+                <button onclick="myFunctionThree()" class="dropBtn" id="aboutBtn">About<i class="arrowDown"></i></button>
                 <div id="aboutDrop" class="dropDownContent">
                     <a href="">What is Kast?</a>
                     <a href="">Kast TV</a>
@@ -81,6 +81,57 @@ The student does not have to recreate more than 2 times the view-height of the s
         </div>
             <div id="itemEight"><em>"Kast has probalby never been more relevant - or necessary - than it is right now."</em></div>
         </div>
-    
+        <script>
+        
+            let dropBtn = document.querySelector('.dropBtn');
+            let communityDrop = document.getElementById('communityDrop');
+            let helpDrop = document.getElementById('helpDrop');
+            let aboutDrop = document.getElementById('aboutDrop');
+            console.log('oh hi Dennis');
+
+            function myFunction() {
+                console.log('oh hi mark');
+                if(communityDrop.style.display === ''){
+                    communityDrop.style.display = "block";
+                }else{
+                    communityDrop.style.display = '';
+                }
+            }
+
+            function myFunctionTwo() {
+                console.log('oh hi mark');
+                if(helpDrop.style.display === ''){
+                    helpDrop.style.display = "block";
+                }else{
+                    helpDrop.style.display = '';
+                }
+            }
+
+            function myFunctionThree() {
+                console.log('oh hi mark');
+                if(aboutDrop.style.display === ''){
+                    aboutDrop.style.display = "block";
+                }else{
+                    aboutDrop.style.display = '';
+                }
+            }
+        //     function myFunction () {
+        //     document.getElementById('communityDrop').classList.toggle('.show');
+        // }
+        
+        // window.onclick = function(event) {
+        //     if (!event.target.matches('.dropBtn')) {
+        //       let dropdowns = document.getElementsByClassName(".dropDownContent");
+        //       let i;
+        //       for (i = 0; i < dropdowns.length; i++) {
+        //         let openDropdown = dropdowns[i];
+        //         if (openDropdown.classList.contains('.show')) {
+        //           openDropdown.classList.remove('.show');
+        //         }
+        //       }
+        //     }
+        //   }
+        
+        </script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!-- 
+    Choose from one of the provided websites.
+Use HTML5 & CSS to recreate the layout for the page as closely as possible
+Any buttons on the page must open to a blank tab.
+Any links referring another section on the page must go to that section.
+The finished project must be deployed to Github Pages 
+The site must utilize animation if it is present on the page
+The site must utilize CSS Grid or Flexbox on at least one (1) section
+It does not need to be entirely responsive
+The student does not have to recreate more than 2 times the view-height of the screen
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kast is Watching Parties Made Easy</title>
+    <link rel="stylesheet" href="styles.css" ref="text/css">
+</head>
+<body>
+    <nav>
+        <div Class="navbar">
+            <div>
+                <a href="" target="blank"><img id="logo" src="assets/kast-logo.svg"/></a>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn" id="openKastBtn"><a href="" target="blank" id='openKastOne'>OPEN KAST</a></button>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="" target="blank" id="premium">Premium</a>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn" id="communityBtn">Community<i class="arrowDown"></i></button>
+                <div id="communityDrop" class="dropDownContent">
+                    <a href="">Community Guidelines</a>
+                    <a href="">Founders Hall of Fame</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn" id="helpBtn">Help<i class="arrowDown"></i></button>
+                <div id="helpDrop" class="dropDownContent">
+                    <a href="">Contact Support</a>
+                    <a href="">FAQ's</a>
+                    <a href="">Get Kast</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn" id="aboutBtn">About<i class="arrowDown"></i></button>
+                <div id="aboutDrop" class="dropDownContent">
+                    <a href="">What is Kast?</a>
+                    <a href="">Kast TV</a>
+                    <a href="">Blog</a>
+                    <a href="">Press Releases</a>
+                </div>
+            </div>  
+        </div>
+    </nav>
+        <div class="sectionOne">
+            <div class=boxLayout>
+                <div>
+                    <img id="img" src="assets/laptop-large-p-500.png"/>
+                    <p id="sectionOneHeader">Watch parties made easy.</p>
+                    <p id="sectionOneP">Watch <strong>whatever you want</strong> with friends online: movies, TV shows, you name it. Share your screen and camera or launch content directly from Kast TV in your watch parties. Join millions of kasters today!</p>
+                    <br>
+                    <a href="" id="openKastTwo" target="blank">OPEN KAST</a>
+                </div>
+            </div>
+        </div>
+        <div class="sectionTwoContainer">
+        <div id="itemOne">Featured in</div>
+        <div class="sectionTwo">
+            <div id="itemTwo"><img src="assets/wired-logo.svg"/></div>
+            <div id="itemThree"><img src="assets/nerdist-logo.svg"/></div>
+            <div id="itemFour"><img src="assets/yahoo-finance-logo.svg"/></div>
+            <div id="itemFive"><img src="assets/evening-standard-logo.svg"/></div>
+            <div id="itemSix"><img src="assets/bbc-logo.svg"/></div>
+            <div id="itemSeven"><img src="assets/daily-mail-logo.svg"/></div>
+        </div>
+            <div id="itemEight"><em>"Kast has probalby never been more relevant - or necessary - than it is right now."</em></div>
+        </div>
+    
+</body>
+</html>

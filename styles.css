@@ -16,6 +16,10 @@ body{
     margin-left: 15px;
 }
 
+#logo:hover {
+    height: 150%;
+}
+
 nav {
     background-color: transparent;
     font-family: Roboto, sans-serif;
